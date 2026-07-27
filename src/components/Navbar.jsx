@@ -80,9 +80,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 </button>
               ))}
               <a
-                href={personalInfo.resumeUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={personalInfo.resumeUrl} download target="_blank" rel="noopener noreferrer"
                 className="px-4 py-1.5 rounded-full bggold text-white text-sm font-medium hover:shadow-lg hover:glow-gold/25 transition-all duration-300"
               >
                 Resume
@@ -129,9 +127,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
               </button>
             ))}
             <a
-              href={personalInfo.resumeUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={personalInfo.resumeUrl} download target="_blank" rel="noopener noreferrer"
               className="px-6 py-2 rounded-full bggold text-white font-medium"
             >
               Resume
