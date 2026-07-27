@@ -74,7 +74,7 @@ export default function Hero() {
               View Projects
             </a>
             <a
-              href={personalInfo.resumeUrl} download target="_blank" rel="noopener noreferrer"
+              href={personalInfo.resumeUrl} download="resume.pdf" target="_blank" rel="noopener noreferrer"
               className="px-8 py-3 rounded-full bggold text-white font-semibold text-base hover:shadow-lg hover:glow-gold/25 transition-all duration-300 hover:-translate-y-0.5 inline-flex items-center gap-2"
             >
               <FiDownload className="w-4 h-4" />

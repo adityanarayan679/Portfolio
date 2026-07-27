@@ -24,7 +24,7 @@ export const personalInfo = {
   github: "https://github.com/adityanarayan679",
   tagline: "Final-year B.Tech CSE student who builds AI-powered web applications \u2014 from research assistants to finance dashboards to creative tools.",
   summary: "Final-year B.Tech Computer Science Engineering student passionate about software development and AI-powered applications. Skilled in C, C++, Python, JavaScript, SQL, HTML5, CSS3, Git, GitHub, and basic Linux. Experienced in designing and deploying AI-powered web applications using modern APIs and responsive front-end technologies. Strong problem-solving, analytical thinking, and software development fundamentals. Seeking an entry-level Software Developer or AI Engineer role.",
-  resumeUrl: "#",
+  resumeUrl: "/resume/resume.pdf",
 }
 
 export const education = [
