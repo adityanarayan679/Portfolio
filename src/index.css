@@ -41,6 +41,7 @@ section[id] {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /* Hero angular divider */
@@ -111,5 +112,6 @@ html {
 
 /* Body */
 body {
+  overflow-x: hidden;
   @apply bg-white text-gray-800 dark:bg-[#050505] dark:text-gray-200;
 }

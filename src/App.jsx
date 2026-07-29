@@ -22,7 +22,7 @@ export default function App() {
   }, [darkMode])
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <Particles />
       <AnimatePresence>
         {!introComplete && (
