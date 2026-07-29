@@ -36,8 +36,14 @@ export default function Hero() {
   return (
 <section
       id="home"
-      className="min-h-screen relative flex items-center overflow-hidden bg-[#F6F6F6]"
+      className="min-h-screen relative flex flex-col overflow-hidden bg-[#F6F6F6] lg:justify-center lg:items-center"
     >
+      <img
+        src="/profile.jpeg"
+        alt={personalInfo.name}
+        className="w-full object-cover lg:hidden"
+        style={{ maxHeight: "45vh" }}
+      />
       <div
         className="absolute inset-0 z-0 bg-[#F6F6F6] hidden lg:block"
         style={{
@@ -45,16 +51,6 @@ export default function Hero() {
           backgroundSize: "contain",
           backgroundPosition: "left center",
           backgroundRepeat: "no-repeat",
-        }}
-      />
-      <div
-        className="absolute inset-0 z-0 bg-[#F6F6F6] lg:hidden"
-        style={{
-          backgroundImage: "url('/profile.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center 30%",
-          backgroundRepeat: "no-repeat",
-          opacity: 0.15,
         }}
       />
       <div className="hidden lg:block">
@@ -109,7 +105,7 @@ export default function Hero() {
       </div>
       <div className="absolute left-[40%] md:left-[38%] top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-crimson/20 to-transparent z-10 hidden md:block" />
 
-      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 py-16">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 pb-16 pt-8 lg:py-16">
         <motion.div
           variants={containerVariants}
           initial="hidden"
