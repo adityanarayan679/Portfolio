@@ -4,33 +4,39 @@ import { personalInfo, education } from "../data"
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-4 max-w-6xl mx-auto">
+    <section id="about" className="py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true, amount: 0.2 }}
       >
         <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-2">
           About <span className="text-crimson">Me</span>
         </h2>
-        <div className="w-16 h-1 bg-gold rounded-full mb-8" />
+        <motion.div
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="w-16 h-1 bg-gold rounded-full mb-10 origin-left"
+        />
 
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg mb-6">
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg mb-6">
               {personalInfo.summary}
             </p>
             <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+              <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                 <FiMapPin className="w-5 h-5 text-gold" />
                 <span className="text-sm font-medium">{personalInfo.location}</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+              <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                 <FiClock className="w-5 h-5 text-gold" />
                 <span className="text-sm font-medium">Final Year B.Tech</span>
               </div>
-              <div className="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+              <div className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
                 <FiTarget className="w-5 h-5 text-gold" />
                 <span className="text-sm font-medium">Entry-Level Roles</span>
               </div>
@@ -41,13 +47,13 @@ export default function About() {
             {education.map((edu, i) => (
               <motion.div
                 key={i}
-                className="p-5 rounded-2xl bg-gray-50 dark:bg-[#0f0a0a] border border-gray-200 dark:border-red-800/40 hover:border-amber-400 dark:hover:border-amber-700/30 transition-all duration-300"
+                className="p-4 rounded-xl bg-gray-50 dark:bg-[#0f0a0a] card-base"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.15 }}
+                transition={{ delay: i * 0.1 }}
                 viewport={{ once: true }}
               >
-                <h3 className="font-heading font-semibold text-sm text-gold mb-1">{edu.degree}</h3>
+                <h3 className="font-heading font-semibold text-sm text-crimson mb-1">{edu.degree}</h3>
                 <p className="text-gray-600 dark:text-gray-300 text-sm">{edu.institution}</p>
               </motion.div>
             ))}
@@ -55,5 +61,5 @@ export default function About() {
         </div>
       </motion.div>
     </section>
-)
+  )
 }

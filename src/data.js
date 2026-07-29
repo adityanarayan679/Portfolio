@@ -22,7 +22,7 @@ export const personalInfo = {
   email: "adityanarayanbarik5277@gmail.com",
   phone: "+91 9337531032",
   github: "https://github.com/adityanarayan679",
-  tagline: "Final-year B.Tech CSE student who builds AI-powered web applications \u2014 from research assistants to finance dashboards to creative tools.",
+  tagline: "Final-year B.Tech CSE student who builds AI-powered web applications — from research assistants to finance dashboards to creative tools.",
   summary: "Final-year B.Tech Computer Science Engineering student passionate about software development and AI-powered applications. Skilled in C, C++, Python, JavaScript, SQL, HTML5, CSS3, Git, GitHub, and basic Linux. Experienced in designing and deploying AI-powered web applications using modern APIs and responsive front-end technologies. Strong problem-solving, analytical thinking, and software development fundamentals. Seeking an entry-level Software Developer or AI Engineer role.",
   resumeUrl: "/resume/resume.pdf",
 }
@@ -36,53 +36,53 @@ export const skillCategories = [
   {
     title: "Programming",
     skills: [
-      { name: "C", icon: SiC },
-      { name: "C++", icon: SiCplusplus },
-      { name: "Python", icon: SiPython },
-      { name: "JavaScript", icon: SiJavascript },
+      { name: "C", icon: SiC, level: 80 },
+      { name: "C++", icon: SiCplusplus, level: 80 },
+      { name: "Python", icon: SiPython, level: 75 },
+      { name: "JavaScript", icon: SiJavascript, level: 65 },
     ],
   },
   {
     title: "Web Technologies",
     skills: [
-      { name: "HTML5", icon: SiHtml5 },
-      { name: "CSS3", icon: DiCss3 },
-      { name: "DOM Manipulation", icon: SiJavascript },
-      { name: "Responsive Web Design", icon: SiHtml5 },
+      { name: "HTML5", icon: SiHtml5, level: 85 },
+      { name: "CSS3", icon: DiCss3, level: 80 },
+      { name: "DOM Manipulation", icon: SiJavascript, level: 65 },
+      { name: "Responsive Web Design", icon: SiHtml5, level: 75 },
     ],
   },
   {
     title: "Database",
     skills: [
-      { name: "SQL", icon: SiMysql },
-      { name: "RDBMS", icon: DiDatabase },
+      { name: "SQL", icon: SiMysql, level: 60 },
+      { name: "RDBMS", icon: DiDatabase, level: 60 },
     ],
   },
   {
     title: "Concepts",
     skills: [
-      { name: "OOP", icon: MdOutlineDataObject },
-      { name: "Data Structures", icon: MdOutlineDataObject },
-      { name: "REST APIs", icon: TbApi },
-      { name: "API Integration", icon: TbApi },
-      { name: "Problem Solving", icon: MdOutlineDataObject },
+      { name: "OOP", icon: MdOutlineDataObject, level: 75 },
+      { name: "Data Structures", icon: MdOutlineDataObject, level: 70 },
+      { name: "REST APIs", icon: TbApi, level: 60 },
+      { name: "API Integration", icon: TbApi, level: 65 },
+      { name: "Problem Solving", icon: MdOutlineDataObject, level: 80 },
     ],
   },
   {
     title: "Tools & Systems",
     skills: [
-      { name: "Git", icon: SiGit },
-      { name: "GitHub", icon: SiGithub },
-      { name: "Basic Linux", icon: SiLinux },
-      { name: "MS Excel", icon: SiStreamlit },
-      { name: "MS Word", icon: SiStreamlit },
+      { name: "Git", icon: SiGit, level: 60 },
+      { name: "GitHub", icon: SiGithub, level: 65 },
+      { name: "Basic Linux", icon: SiLinux, level: 40 },
+      { name: "MS Excel", icon: SiStreamlit, level: 55 },
+      { name: "MS Word", icon: SiStreamlit, level: 55 },
     ],
   },
   {
     title: "Additional",
     skills: [
-      { name: "PGDCA", icon: FaGraduationCap },
-      { name: "Basic Tally", icon: FaGraduationCap },
+      { name: "PGDCA", icon: FaGraduationCap, level: 70 },
+      { name: "Basic Tally", icon: FaGraduationCap, level: 40 },
     ],
   },
 ]
@@ -97,10 +97,11 @@ export const projects = [
   },
   {
     title: "Smart Finance",
-    description: "A personal finance management app with AI-powered financial insights \u2014 an integrated AI chatbot for finance questions, plus dashboards for expense tracking, budgeting, and spending analysis.",
+    description: "A personal finance management app with AI-powered financial insights — an integrated AI chatbot for finance questions, plus dashboards for expense tracking, budgeting, and spending analysis.",
     tech: ["HTML", "CSS", "JavaScript", "AI APIs"],
     liveUrl: "https://adityanarayan679.github.io/Smart-Finance/",
     githubUrl: "https://github.com/adityanarayan679",
+    featured: true,
   },
   {
     title: "AI Powered Whiteboard",
@@ -119,16 +120,16 @@ export const projects = [
 ]
 
 export const certifications = [
-  "AI For Everyone \u2014 DeepLearning.AI",
-  "Graphic Design \u2014 Adobe",
-  "Cloud Computing Foundations \u2014 Duke University",
-  "Introduction to Cybersecurity Essentials \u2014 IBM",
-  "Internet of Things: Communication Technologies \u2014 UC San Diego",
-  "Introduction to Google Workspace with Gemini \u2014 Google Cloud",
-  "Gemini in Gmail \u2014 Google Cloud",
-  "Introduction to Microsoft Excel \u2014 Coursera",
-  "Getting Started with Microsoft Excel \u2014 Coursera",
-  "Getting Started with Microsoft PowerPoint \u2014 Coursera",
+  "AI For Everyone — DeepLearning.AI",
+  "Graphic Design — Adobe",
+  "Cloud Computing Foundations — Duke University",
+  "Introduction to Cybersecurity Essentials — IBM",
+  "Internet of Things: Communication Technologies — UC San Diego",
+  "Introduction to Google Workspace with Gemini — Google Cloud",
+  "Gemini in Gmail — Google Cloud",
+  "Introduction to Microsoft Excel — Coursera",
+  "Getting Started with Microsoft Excel — Coursera",
+  "Getting Started with Microsoft PowerPoint — Coursera",
 ]
 
 export const experience = [
