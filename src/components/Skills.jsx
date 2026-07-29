@@ -6,7 +6,7 @@ export default function Skills() {
   const [activeCategory, setActiveCategory] = useState(0)
 
   return (
-    <section id="skills" className="py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
+    <section id="skills" className="py-16 sm:py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}

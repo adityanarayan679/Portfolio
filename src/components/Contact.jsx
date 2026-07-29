@@ -29,7 +29,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
+    <section id="contact" className="py-16 sm:py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -106,7 +106,7 @@ export default function Contact() {
             </motion.div>
           </div>
 
-          <div className="p-8 rounded-xl bg-gray-50 dark:bg-[#0f0a0a] card-base relative">
+          <div className="p-6 sm:p-8 rounded-xl bg-gray-50 dark:bg-[#0f0a0a] card-base relative">
             <AnimatePresence>
               {toast && (
                 <motion.div

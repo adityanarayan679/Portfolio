@@ -47,9 +47,6 @@ export default function Navbar({ darkMode, setDarkMode }) {
           <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-shimmer" />
         </motion.div>
       </div>
-      <div className="fixed top-4 right-4 z-50">
-        <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
-      </div>
       <AnimatePresence>
         {scrolled && (
           <motion.nav
@@ -59,9 +56,12 @@ export default function Navbar({ darkMode, setDarkMode }) {
             exit={{ y: -100, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <a href="#home" className="font-heading font-bold text-lg text-gold tracking-wide cursor-pointer">
-              {personalInfo.name.charAt(0)}
-            </a>
+            <div className="flex items-center gap-3">
+              <a href="#home" className="font-heading font-bold text-lg text-gold tracking-wide cursor-pointer">
+                {personalInfo.name.charAt(0)}
+              </a>
+              <ThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+            </div>
             <div className="hidden md:flex items-center gap-6">
               {navLinks.map((link) => (
                 <button

@@ -4,7 +4,7 @@ import { certifications } from "../data"
 
 export default function Certifications() {
   return (
-    <section id="certifications" className="py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
+    <section id="certifications" className="py-16 sm:py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
       <motion.div
         initial={{ opacity: 0, x: 60 }}
         whileInView={{ opacity: 1, x: 0 }}

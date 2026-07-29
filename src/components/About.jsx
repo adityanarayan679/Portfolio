@@ -4,7 +4,7 @@ import { personalInfo, education } from "../data"
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
+    <section id="about" className="py-16 sm:py-24 px-4 max-w-6xl mx-auto bg-white dark:bg-[#0a0505]">
       <motion.div
         initial={{ opacity: 0, x: -60 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -43,7 +43,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {education.map((edu, i) => (
               <motion.div
                 key={i}
