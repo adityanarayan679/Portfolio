@@ -90,8 +90,8 @@ export const skillCategories = [
 export const projects = [
   {
     title: "ResearchMind AI",
-    description: "An AI-powered research assistant that lets users upload PDF documents and interact with them through an intelligent chatbot. Integrates AI APIs for conversational Q&A grounded in uploaded documents, with an interface for document upload, chat history, and AI-powered document understanding.",
-    tech: ["Python", "Streamlit", "AI APIs"],
+    description: "An AI-powered research assistant that lets users upload PDF documents and interact with them through an intelligent chatbot. Built on a Retrieval-Augmented Generation (RAG) pipeline — documents are indexed, chunked, and embedded, then relevant chunks are retrieved and passed to the LLM for grounded, citation-ready answers. Includes an interface for document upload, chat history, and AI-powered document understanding.",
+    tech: ["Python", "Streamlit", "AI APIs", "RAG Pipelines"],
     liveUrl: "https://researchmind-ai-mnyurglvj9ny7fjvzxrvqz.streamlit.app/",
     githubUrl: "https://github.com/adityanarayan679",
   },
