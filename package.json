@@ -6,17 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "postbuild": "react-snap",
+    "postbuild": "node prerender.mjs",
     "preview": "vite preview"
-  },
-  "reactSnap": {
-    "source": "dist",
-    "waitFor": "#home",
-    "crawl": false,
-    "timeout": 30000,
-    "puppeteer": {
-      "args": ["--no-sandbox", "--disable-setuid-sandbox"]
-    }
   },
   "dependencies": {
     "framer-motion": "^11.15.0",
@@ -28,7 +19,6 @@
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.49",
-    "react-snap": "^1.23.0",
     "tailwindcss": "^3.4.16",
     "vite": "^6.0.3"
   }

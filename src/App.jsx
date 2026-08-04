@@ -15,7 +15,7 @@ import Particles from "./components/Particles"
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(false)
-  const [introComplete, setIntroComplete] = useState(false)
+  const [introComplete, setIntroComplete] = useState(import.meta.env.SSR)
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode)
