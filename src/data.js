@@ -93,14 +93,14 @@ export const projects = [
     description: "An AI-powered research assistant that lets users upload PDF documents and interact with them through an intelligent chatbot. Built on a Retrieval-Augmented Generation (RAG) pipeline — documents are indexed, chunked, and embedded, then relevant chunks are retrieved and passed to the LLM for grounded, citation-ready answers. Includes an interface for document upload, chat history, and AI-powered document understanding.",
     tech: ["Python", "Streamlit", "AI APIs", "RAG Pipelines"],
     liveUrl: "https://researchmind-ai-mnyurglvj9ny7fjvzxrvqz.streamlit.app/",
-    githubUrl: "https://github.com/adityanarayan679",
+    githubUrl: "https://github.com/adityanarayan679/Researchmind-Ai",
   },
   {
     title: "Smart Finance",
     description: "A personal finance management app with AI-powered financial insights — an integrated AI chatbot for finance questions, plus dashboards for expense tracking, budgeting, and spending analysis.",
     tech: ["HTML", "CSS", "JavaScript", "AI APIs"],
     liveUrl: "https://adityanarayan679.github.io/Smart-Finance/",
-    githubUrl: "https://github.com/adityanarayan679",
+    githubUrl: "https://github.com/adityanarayan679/Smart-Finance",
     featured: true,
   },
   {
@@ -108,14 +108,14 @@ export const projects = [
     description: "An AI-assisted whiteboard that generates diagrams, flowcharts, and mind maps, providing an interactive workspace for visual brainstorming.",
     tech: ["HTML", "CSS", "JavaScript", "AI APIs"],
     liveUrl: "https://adityanarayan679.github.io/AI-Powered-Whiteboard/",
-    githubUrl: "https://github.com/adityanarayan679",
+    githubUrl: "https://github.com/adityanarayan679/AI-Powered-Whiteboard",
   },
   {
     title: "Anime Binge Tracker",
     description: "A responsive web app for tracking watched anime and progress, with search, categorization, and progress management features.",
     tech: ["HTML", "CSS", "JavaScript"],
     liveUrl: "https://adityanarayan679.github.io/anime-binge-tracker/",
-    githubUrl: "https://github.com/adityanarayan679",
+    githubUrl: "https://github.com/adityanarayan679/anime-binge-tracker",
   },
 ]
 
