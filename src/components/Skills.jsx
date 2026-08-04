@@ -36,29 +36,31 @@ export default function Skills() {
           ))}
         </div>
 
-        <motion.div
-          key={activeCategory}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
-          className="flex flex-wrap gap-3"
-        >
-          {skillCategories[activeCategory].skills.map((skill, i) => {
-            const IconComp = skill.icon
-            return (
-              <motion.div
-                key={i}
-                className="flex items-center gap-2 px-5 py-3 rounded-xl bg-gray-50 dark:bg-[#0f0a0a] card-base cursor-default"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: i * 0.05 }}
-              >
-                <IconComp className="w-5 h-5 text-gold" />
-                <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
-              </motion.div>
-            )
-          })}
-        </motion.div>
+        {skillCategories.map((cat, i) => (
+          <motion.div
+            key={i}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+            className={"flex flex-wrap gap-3 " + (activeCategory === i ? "" : "hidden")}
+          >
+            {cat.skills.map((skill, j) => {
+              const IconComp = skill.icon
+              return (
+                <motion.div
+                  key={j}
+                  className="flex items-center gap-2 px-5 py-3 rounded-xl bg-gray-50 dark:bg-[#0f0a0a] card-base cursor-default"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: j * 0.05 }}
+                >
+                  <IconComp className="w-5 h-5 text-gold" />
+                  <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{skill.name}</span>
+                </motion.div>
+              )
+            })}
+          </motion.div>
+        ))}
       </motion.div>
     </section>
   )
